@@ -486,8 +486,7 @@ def export_dxf_full_autocad(x_h, y_h, z_e, s_v, r_dict, B_w, nx_v, ny_v):
     lines.extend(["0", "SEQEND"])
 
     lines.extend(["0", "ENDSEC", "0", "EOF"])
-    return "
-".join(lines)
+    return "\n".join(lines)
 
 # ----------------------------------------------------------------------------
 # 5. TAMPILAN APLIKASI UTAMA
